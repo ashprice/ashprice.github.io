@@ -3,7 +3,6 @@ header {
 }
 
 header h1 {
-        display: block;
         margin: 0.75em 0;
         text-transform: none;
         font-size: 2.5em;
@@ -33,6 +32,127 @@ header h1 {
         margin-left: 1.75em;
         padding: 0;
         vertical-align: middle;
+}
+
+#header > nav > ul > li a {
+        border: 0;
+ /*       color: rgba(255, 255, 255, 0.35);*/
+        display: inline-block;
+        font-size: 0.6em;
+        font-weight: bold;
+        letter-spacing: 0.25em;
+        text-transform: uppercase;
+}
+
+article section {
+        display: inline-block;
+        vertical-align: top;
+}
+
+.intro {
+        padding: 0;
+        border: 0;
+        margin: 0;
+        box-shadow: 0;
+}
+
+@media only screen and (min-width: 1200px) {
+        #wrapper {
+                width: 1350px;
+                max-width: calc(50vw + 420px);
+        }
+        p, hr {
+                max-width: 970px;
+        }
+}
+
+#wrapper {
+        padding-top: 15px;
+}
+#wrapper {
+        margin: 1.125em 0 0 0;
+}
+#wrapper li, #wrapper li p {
+        text-align: left;
+}
+#wrapper ul {
+        margin: 1em 3em 0 0;
+        padding: 0 0 0 1.375em;
+}
+#wrapper li > ul {
+        margin: 0.25 0 0.25 0;
+}
+#wrapper li {
+        margin-top: 0;
+}
+#wrapper ul > li:nth-of-type(n+2) {
+        margin: 0;
+}
+
+@media only screen and (max-width: 649px) {
+        #wrapper section {
+                max-width: 100%;
+        }
+        #wrapper ul {
+                overflow-wrap: break-word;
+                margin-right: 0;
+        }
+        #wrapper li {
+                padding: 1px 0;
+                margin: 2px 0 0 0;
+        }
+        #wrapper ul > li::before {
+                top: 0.25em;
+        }
+}
+
+.wrapper {
+        overflow-wrap: break-word;
+}
+
+.wrapper p,
+.wrapper li {
+        text-align: justify;
+        -webkit-hyphens: auto;
+        -ms-hyphens: auto;
+        hyphens: auto,
+}
+
+html {
+        font-variant-numeric: oldstyle-nums;
+}
+
+.intro > blockquote {
+        margin: 0 0 1.tem 0;
+        padding: 0.9rem 1.25rem 0.95rem 1.25rem;
+        clear: none;
+}
+
+h1 {
+        margin: 0.6em 0 0.5em -0.75em;
+        font-weight: bold;
+        position: relative
+}
+
+@media only screen and (max-width: 650px) {
+        h1 {
+                margin: 1.25em 0 0.5em 0;
+        }
+}
+
+h1 {
+        font-feature-settings: 'smcp';
+        font-size: 1.75em;
+        line-height: 1.25;
+        letter-spacing: -0.75px;
+}
+
+/* para */
+p {
+        margin: 0;
+}
+p + p {
+        text-indent: 2.5em;
 }
 
 @font-face {
